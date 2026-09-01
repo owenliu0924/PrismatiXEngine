@@ -1,0 +1,25 @@
+[id chapter1.start]
+*start
+[id chapter1.route]
+[set routeName=choice]
+[id chapter1.choice.stay]
+[choice text="ホームに残る" goto=stay]
+[id chapter1.choice.leave]
+[choice text="灯台へ向かう" goto=leave]
+[choice.wait]
+[id chapter1.stay]
+*stay
+[id chapter1.unlock-variable]
+[set endingUnlocked=true]
+[id chapter1.unlock-gallery]
+[commercial.unlock id=ending-cg]
+[id chapter1.stay-ending]
+私たちは始発電車を待った。
+[id chapter1.stay-end]
+[end]
+[id chapter1.leave]
+*leave
+[id chapter1.leave-ending]
+彼女は海辺の灯台へ歩き出した。
+[id chapter1.leave-end]
+[end]

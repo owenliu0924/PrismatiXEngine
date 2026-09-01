@@ -1,0 +1,16 @@
+[id prologue.start]
+*start
+[id prologue.toast]
+[commercial.toast message=story.prologue]
+[id prologue.effect]
+[effect dream-tone]
+[id prologue.nvl]
+[nvl clear=true]
+[id prologue.opening]
+雨音がホームを包み、この頁は NVL モードで始まる。
+[id prologue.memory]
+「[ruby=きおく]記憶[/ruby]」が遠い灯の中で目を覚ました。
+[id prologue.adv]
+[adv]
+[id prologue.next]
+[jump scene=chapter1 target=start]

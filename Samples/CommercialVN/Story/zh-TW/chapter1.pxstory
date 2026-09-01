@@ -1,0 +1,25 @@
+[id chapter1.start]
+*start
+[id chapter1.route]
+[set routeName=choice]
+[id chapter1.choice.stay]
+[choice text="留在月台" goto=stay]
+[id chapter1.choice.leave]
+[choice text="前往燈塔" goto=leave]
+[choice.wait]
+[id chapter1.stay]
+*stay
+[id chapter1.unlock-variable]
+[set endingUnlocked=true]
+[id chapter1.unlock-gallery]
+[commercial.unlock id=ending-cg]
+[id chapter1.stay-ending]
+我們等到了第一班電車。
+[id chapter1.stay-end]
+[end]
+[id chapter1.leave]
+*leave
+[id chapter1.leave-ending]
+她轉身走向海邊的燈塔。
+[id chapter1.leave-end]
+[end]
