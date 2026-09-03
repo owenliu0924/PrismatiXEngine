@@ -1,0 +1,39 @@
+{
+  "format": "PrismatiXProject",
+  "schemaRevision": 2,
+  "id": "prisma-family-demo",
+  "name": "星光、可可與三人份的晚安",
+  "version": "1.0.0",
+  "contentVersion": "demo-v1",
+  "saveVersion": 1,
+  "graphicsTier": "basic",
+  "resolution": {"width": 1280, "height": 720},
+  "entry": {"story": "main", "ui": "title"},
+  "defaultLocale": "zh-TW",
+  "supportedLocales": ["zh-TW"],
+  "storyIndex": "Story/story.pxindex",
+  "gameCatalog": "Content/game.pxgame",
+  "extensions": ["Content/Extensions/family.pxextension"],
+  "uiEntryPoints": {
+    "title": "Content/UI/Title.tsx",
+    "hud": "Content/UI/HUD.tsx",
+    "gallery": "Content/UI/Gallery.tsx",
+    "backlog": "Content/UI/Backlog.tsx",
+    "save": "Content/UI/Save.tsx",
+    "load": "Content/UI/Load.tsx"
+  },
+  "assets": [
+    {"id":"10000000-0000-4000-8000-000000000001","name":"Evening Room","kind":"background","source":"Assets/evening-room.png","sourceFileName":"evening-room.png","tags":["demo","background"]},
+    {"id":"20000000-0000-4000-8000-000000000001","name":"Illya Uniform","kind":"character","source":"Assets/illya.png","sourceFileName":"illya.png","tags":["demo","character","external"]},
+    {"id":"30000000-0000-4000-8000-000000000001","name":"Miyu Uniform","kind":"character","source":"Assets/miyu.png","sourceFileName":"miyu.png","tags":["demo","character","external"]},
+    {"id":"40000000-0000-4000-8000-000000000001","name":"Magic Chime","kind":"audio","source":"Assets/magic-chime.wav","sourceFileName":"magic-chime.wav","tags":["demo","sfx"]},
+    {"id":"50000000-0000-4000-8000-000000000001","name":"Three Cups Ending","kind":"cg","source":"Assets/three-cups-ending.png","sourceFileName":"three-cups-ending.png","tags":["demo","gallery"]},
+    {"id":"55000000-0000-4000-8000-000000000001","name":"Noto Sans TC Bold","kind":"font","source":"Content/Fonts/NotoSansTC-Bold.ttf","sourceFileName":"NotoSansTC-Bold.ttf","tags":["demo","font","cjk"]}
+  ],
+  "characters": [
+    {"id":"61000000-0000-4000-8000-000000000001","alias":"illya","displayName":"伊莉雅","source":"Characters/61000000-0000-4000-8000-000000000001.pxcharacter"},
+    {"id":"62000000-0000-4000-8000-000000000001","alias":"miyu","displayName":"美遊","source":"Characters/62000000-0000-4000-8000-000000000001.pxcharacter"},
+    {"id":"63000000-0000-4000-8000-000000000001","alias":"brother","displayName":"哥哥","source":"Characters/63000000-0000-4000-8000-000000000001.pxcharacter"}
+  ],
+  "settings": {"demo.controllerNavigation": true, "demo.accessibleUi": true}
+}

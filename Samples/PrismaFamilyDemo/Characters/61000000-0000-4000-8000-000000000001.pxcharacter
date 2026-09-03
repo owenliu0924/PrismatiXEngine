@@ -1,0 +1,10 @@
+{
+  "format":"PrismatiXCharacter","schemaRevision":2,
+  "id":"61000000-0000-4000-8000-000000000001","revision":1,
+  "displayName":"伊莉雅","aliases":["illya"],
+  "defaultExpressionId":"61100000-0000-4000-8000-000000000001",
+  "expressions":[{
+    "id":"61100000-0000-4000-8000-000000000001","name":"微笑","aliases":["smile","default"],
+    "assetId":"20000000-0000-4000-8000-000000000001","thumbnailAssetId":null
+  }]
+}

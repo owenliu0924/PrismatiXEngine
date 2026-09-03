@@ -1,0 +1,19 @@
+{
+  "format":"PrismatiXGame","schemaRevision":2,
+  "variables":[
+    {"name":"brotherChoice","type":"string","default":"undecided","scope":"session","description":"哥哥選擇的晚安活動"},
+    {"name":"familyEndingUnlocked","type":"boolean","default":false,"scope":"profile","description":"三人份晚安結局是否解鎖"}
+  ],
+  "progressionFlags":["three-cups-ending"],
+  "gallery":[{
+    "id":"three-cups-ending","title":"三人份的晚安",
+    "image":{"id":"50000000-0000-4000-8000-000000000001","path":"Assets/three-cups-ending.png","kind":"cg"},
+    "thumbnail":{"id":"50000000-0000-4000-8000-000000000001","path":"Assets/three-cups-ending.png","kind":"cg"},
+    "unlockFlag":"three-cups-ending"
+  }],
+  "unlockables":[{"id":"three-cups-ending","kind":"gallery","condition":"familyEndingUnlocked == true","payload":{"route":"gallery"}}],
+  "inputBindings":[
+    {"key":"G","command":"screen.open","argument":"gallery"},
+    {"key":"B","command":"screen.open","argument":"backlog"}
+  ]
+}

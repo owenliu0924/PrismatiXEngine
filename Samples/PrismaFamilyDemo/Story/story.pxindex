@@ -1,0 +1,5 @@
+{
+  "format":"PrismatiXStoryIndex","schemaRevision":2,"id":"prisma-family-story","entryScene":"main",
+  "chapters":[{"id":"chapter-evening","title":"今晚也在同一盞燈下","scenes":["main"]}],
+  "scenes":[{"id":"main","title":"三人份的晚安","sources":{"zh-TW":"Story/zh-TW/main.pxstory"},"requiredLabels":["start","cocoa","cards","together","ending"]}]
+}

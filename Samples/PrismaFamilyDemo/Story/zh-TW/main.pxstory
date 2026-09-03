@@ -1,0 +1,102 @@
+[id main.start]
+*start
+[id main.background]
+[bg asset=10000000-0000-4000-8000-000000000001]
+[id main.chime]
+[se asset=40000000-0000-4000-8000-000000000001]
+[id main.illya.show]
+[show character=illya expression=smile position=center x=-150 y=180 scale=0.82]
+[id main.miyu.show]
+[show character=miyu expression=calm position=center x=150 y=180 scale=0.82]
+[id main.opening]
+傍晚的客廳裡，兩個書包並排靠著沙發。哥哥才剛放下鑰匙，伊莉雅就從桌邊探出身子。
+[id main.illya.hello]
+@illya
+哥哥，歡迎回家！今天的「晚安作戰會議」只差你了。
+[id main.miyu.hello]
+@miyu
+伊莉雅把普通的睡前時間寫成了作戰計畫……不過，我也準備了提案。
+
+[id main.question]
+哥哥要先陪她們做什麼？
+[id main.choice.cocoa]
+[choice text="替兩人泡熱可可" goto=cocoa]
+[id main.choice.cards]
+[choice text="抽一張星星卡決定故事" goto=cards]
+[id main.choice.together]
+[choice text="三個人一起收拾客廳" goto=together]
+[choice.wait]
+
+[id main.cocoa]
+*cocoa
+[id main.cocoa.set]
+[set brotherChoice=cocoa]
+[id main.cocoa.line]
+@brother
+先喝點熱的吧。今天每個人都辛苦了。
+[id main.cocoa.illya]
+@illya
+那我要棉花糖最多的那杯！……美遊那杯也要一樣多喔。
+[id main.cocoa.miyu]
+@miyu
+嗯。哥哥泡的可可，溫度總是剛剛好。
+[id main.cocoa.sparkle]
+[family.sparkle message="選擇了熱可可：三只杯子碰在一起。"]
+[id main.cocoa.jump]
+[jump target=ending]
+
+[id main.cards]
+*cards
+[id main.cards.set]
+[set brotherChoice=cards]
+[id main.cards.line]
+@brother
+那就交給星星。抽到哪一張，今晚就講哪個故事。
+[id main.cards.illya]
+@illya
+我抽到「勇氣」！這一定是魔法少女大勝利的故事。
+[id main.cards.miyu]
+@miyu
+我的是「歸途」。……我喜歡大家最後都能回家的故事。
+[id main.cards.sparkle]
+[family.sparkle message="選擇了星星卡：勇氣與歸途被放在一起。"]
+[id main.cards.jump]
+[jump target=ending]
+
+[id main.together]
+*together
+[id main.together.set]
+[set brotherChoice=together]
+[id main.together.line]
+@brother
+作戰第一步——先把據點恢復原狀。做完我請客。
+[id main.together.illya]
+@illya
+欸——哥哥太認真了啦！美遊，我們三分鐘內完成給他看！
+[id main.together.miyu]
+@miyu
+收到。哥哥，請負責把最高那層的書放回去。
+[id main.together.sparkle]
+[family.sparkle message="選擇了共同收拾：客廳在三分鐘內恢復整齊。"]
+[id main.together.jump]
+[jump target=ending]
+
+[id main.ending]
+*ending
+[id main.ending.set]
+[set familyEndingUnlocked=true]
+[id main.ending.unlock]
+[family.unlock id=three-cups-ending]
+[id main.ending.illya]
+@illya
+哥哥，明天也要準時回來喔。少一個人，就不是「三人份」了。
+[id main.ending.miyu]
+@miyu
+晚安，哥哥。謝謝你把「回家」變成一件可以期待的事。
+
+[id main.ending.narration]
+窗外的星光落進三只杯子裡。平凡的一晚，被兩聲晚安輕輕保存成了回憶。
+[id main.ending.sparkle]
+[family.sparkle message="已解鎖回憶：三人份的晚安。按 G 可開啟回憶相簿。"]
+[id main.end]
+[end]

@@ -1,0 +1,10 @@
+{
+  "format":"PrismatiXCharacter","schemaRevision":2,
+  "id":"62000000-0000-4000-8000-000000000001","revision":1,
+  "displayName":"美遊","aliases":["miyu"],
+  "defaultExpressionId":"62100000-0000-4000-8000-000000000001",
+  "expressions":[{
+    "id":"62100000-0000-4000-8000-000000000001","name":"安靜","aliases":["calm","default"],
+    "assetId":"30000000-0000-4000-8000-000000000001","thumbnailAssetId":null
+  }]
+}

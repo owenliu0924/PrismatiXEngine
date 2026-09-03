@@ -1,0 +1,11 @@
+{
+  "format":"PrismatiXExtension","schemaRevision":2,"language":"javascript",
+  "id":"family-demo","version":"1.0.0","requiredEngineVersion":">=0.2.0 <0.3.0",
+  "entry":"family.js","capabilities":["runtime","ui"],
+  "safety":{"previewSafe":true,"deterministic":true,"seekSafe":true,"rollbackSafe":true},
+  "commands":[
+    {"id":"family.sparkle","displayName":"星光提示","description":"送出可回溯的展示事件。","await":true,"rollback":"reversible","capabilities":["runtime"],"parameters":[{"name":"message","type":"string","required":true,"editorHint":"multiline"}]},
+    {"id":"family.unlock","displayName":"解鎖回憶","rollback":"reversible","capabilities":["runtime"],"parameters":[{"name":"id","type":"string","required":true}]}
+  ],
+  "actions":[{"id":"family.openGallery","displayName":"打開回憶相簿","reentry":"ignoreWhileRunning","capabilities":["ui"],"parameters":[]}]
+}
